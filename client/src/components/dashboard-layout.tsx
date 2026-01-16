@@ -43,10 +43,10 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
       <aside className="hidden lg:flex w-64 flex-col border-r bg-card fixed inset-y-0 z-30">
         <div className="h-16 flex items-center px-6 border-b">
            <Link href="/">
-              <a className="flex items-center gap-2 font-heading font-bold text-xl tracking-tight">
+              <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tight cursor-pointer">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">C</div>
                 <span>Comply<span className="text-primary">NG</span></span>
-              </a>
+              </div>
             </Link>
         </div>
         <div className="flex-1 py-6 px-4 space-y-1 overflow-y-auto">
@@ -127,10 +127,10 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
 function NavItem({ icon: Icon, label, href, active = false, onClick }: { icon: any, label: string, href: string, active?: boolean, onClick?: () => void }) {
   return (
     <Link href={href}>
-      <a 
+      <div 
         onClick={onClick}
         className={cn(
-          "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
+          "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer",
           active 
             ? "bg-primary/10 text-primary" 
             : "text-muted-foreground hover:bg-muted hover:text-foreground"
@@ -138,7 +138,7 @@ function NavItem({ icon: Icon, label, href, active = false, onClick }: { icon: a
       >
         <Icon className="h-4 w-4" />
         {label}
-      </a>
+      </div>
     </Link>
   );
 }

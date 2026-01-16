@@ -19,10 +19,10 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <a className="flex items-center gap-2 font-heading font-bold text-xl tracking-tight">
+          <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tight cursor-pointer">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">C</div>
             <span>Comply<span className="text-primary">NG</span></span>
-          </a>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
