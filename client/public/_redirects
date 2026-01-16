@@ -1,0 +1,6 @@
+/*
+  Redirect all routes to index.html for Single Page Application (SPA) routing.
+  This ensures that when a user refreshes or visits a deep link (e.g., /dashboard),
+  Netlify serves the index.html and lets Wouter handle the routing on the client side.
+*/
+/*  /index.html  200
